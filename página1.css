@@ -14,27 +14,25 @@ margin: 0px auto;
 box-shadow: #555554 0px 10px 20px -10px;    
 width: 80%;
 max-width: 600px;
-
+transition: 0.5s;
 }
 .modeldiv1 :hover {
-    transition: 0.5s;
+    
     box-shadow: #434342 0px 20px 40px -10px;
-   transform:scale(12px)
-  
+   transform:scale(1.05px)
 }
-
-  @keyframes pulsar-flutuar {
+@keyframes brilhar {
+  0%, 100% { box-shadow: 0 0 5px #8ca1a2; }  50%       { box-shadow: 0 0 20px #4d49d2; }
+}
+@keyframes pulsar-flutuar {
   0%, 100% { transform: scale(1) translateY(0); }
   50%       { transform: scale(1.03) translateY(-8px); }
 }
 
-@keyframes brilhar {
-  0%, 100% { box-shadow: 0 0 5px #a2958c; }
-  50%       { box-shadow: 0 0 20px #a2958c; }
-}
+
 .modeldiv1 {
-  animation: pulsar-flutuar 2s ease-in-out infinite;
   animation: brilhar 3s ease-in-out infinite;
+    animation: pulsar-flutuar 3s ease-in-out infinite;
 
 
 }
