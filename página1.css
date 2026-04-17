@@ -1,0 +1,40 @@
+body{
+    margin: 20px;
+    padding: 20px; 
+    background: linear-gradient(to right, #285965, #cf5b5b);
+}
+.modeldiv1 {
+    background-color: aliceblue;
+    border-radius: 20px 20px 20px 20px;
+    color: #a2958c;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+padding: 30px;
+margin: 0px auto;
+box-shadow: #555554 0px 10px 20px -10px;    
+width: 80%;
+max-width: 600px;
+
+}
+.modeldiv1 :hover {
+    transition: 0.5s;
+    box-shadow: #434342 0px 20px 40px -10px;
+   transform:scale(12px)
+  
+}
+
+  @keyframes pulsar-flutuar {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50%       { transform: scale(1.03) translateY(-8px); }
+}
+
+@keyframes brilhar {
+  0%, 100% { box-shadow: 0 0 5px #a2958c; }
+  50%       { box-shadow: 0 0 20px #a2958c; }
+}
+.modeldiv1 {
+  animation: pulsar-flutuar 2s ease-in-out infinite;
+  animation: brilhar 3s ease-in-out infinite;
+
+
+}
